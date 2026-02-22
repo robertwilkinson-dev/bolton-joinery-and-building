@@ -1,0 +1,11 @@
+h1 {
+  font-size: 2em;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover {
+    color: darken($accent, 20%);
+  }
+}

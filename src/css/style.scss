@@ -1,0 +1,431 @@
+$max-screen-size: 1000px;
+
+$small-width: 600px;
+$medium-width: 780px;
+$large-width: 850px;
+
+// Colors
+$core: #b3b3b3;
+$accent: #024bad;
+
+$header-font: 'Raleway', sans-serif;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway:300,700');
+// Useful CSS
+@import 'globals/reset.scss';
+@import 'globals/grid.scss';
+
+// Icons
+@import "font/bjb-icons.css";
+
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings:"lnum" 1;
+  -moz-font-feature-settings:"lnum=1";
+  -ms-font-feature-settings:"lnum" 1;
+  -o-font-feature-settings:"lnum" 1;
+  -webkit-font-feature-settings:"lnum" 1;
+  font-feature-settings:"lnum" 1;
+}
+.content {
+  margin-top: 30px;
+  .cta-img {
+    img {
+      @media screen and (min-width: $medium-width){
+        width: 90%;
+      }
+    }
+  }
+  p {
+    line-height: 1.5em;
+  }
+  h2 {
+    font-family: $header-font;
+    color: $accent;
+  }
+  h1, h4 {
+    color: $accent;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 1.75em;
+    @media screen and (min-width: $medium-width) {
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }
+    @media screen and (max-width: $medium-width) {
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+}
+.hero {
+  background: $accent;
+  width: 96vw;
+  max-width: 1300px;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
+    background: $core;
+  }
+  .title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    h1 {
+      font-family: helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+      font-size: 2.5em;
+      line-height: 0.9em;
+    }
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.3em;
+      line-height: 0.9em;
+      text-transform: uppercase;
+    }
+  }
+  .menu {
+    transition: all 0.5s;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @media print {
+      display: none;
+    }
+    span {
+      top: 18px;
+      display: inline-block;
+      line-height: 0.5em;
+    }
+    span, span:before, span:after {
+      border-radius: 1px;
+      height: 3px;
+      width: 35px;
+      background: white;
+      position: absolute;
+      display: block;
+      content: '';
+    }
+    span:before {
+      top: -10px;
+    }
+    span:after {
+      bottom: -10px;
+    }
+    @media screen and (min-width: $medium-width) {
+      text-align: center;
+    }
+
+    &.is-active {
+      max-height: 24em;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      @media screen and (min-width: $medium-width) {
+        display: inline-block;
+      }
+      @media screen and (max-width: $medium-width) {
+        display: block;
+      }
+      #menu.is-active {
+        background: darken($accent, 10%);
+      }
+      li {
+        font-family: $header-font;
+        display: inline-block;
+        margin: 0;
+        a {
+          position: relative;
+          margin: 0;
+          transition: all 0.3s;
+          display: inline-block;
+          color: white;
+          text-decoration: none;
+          padding: 20px 10px;
+          font-size: 1em;
+          &:hover {
+            background: lighten($accent, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+ul.buttons {
+  padding: 0;
+  @media screen and (min-width: $medium-width) {
+    margin: 20px 0 20px 0;
+  }
+  @media screen and (max-width: $medium-width) {
+    margin: 0;
+  }
+  li {
+    width: 100%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    a {
+      padding-left: 2em;
+      @media screen and (min-width: $medium-width) {
+        font-size: 0.9em;
+        margin: 0 10px;
+        width: calc(33% - 31px);
+      }
+      @media screen and (max-width: $medium-width) {
+        font-size: 1em;
+        margin: 10px 0;
+        width: 100%;
+      }
+      // Deprecation Fix
+      & {
+        transition: all 0.5s;
+        padding: 0 10px;
+        background-color: $accent;
+        line-height: 5.5em;
+        height: 5.5em;
+        float: left;
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      &:hover {
+        background: lighten($accent, 20%);
+      }
+      img {
+        width: 3em;
+        padding-right: 10px;
+      }
+    }
+    &:first-child {
+      a {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@media screen and (max-width: $medium-width) {
+  .hero {
+    .container {
+      width: 100%;
+    }
+    .menu {
+      max-height: 2.5em;
+      overflow-y: hidden;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          display: block;
+          margin: 0;
+          a {
+            transition: all 0.2s;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px;
+            font-size: 1.15em;
+            &:hover {
+              background: darken($accent, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//For the mobile menu
+@media screen and (min-width: $medium-width){
+  #menu {
+    display: none;
+  }
+}
+
+.footer {
+  padding-bottom: 15px;
+}
+
+.details {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  p {
+    margin: 0;
+    strong {
+      color: $accent
+    }
+  }
+}
+
+form {
+  width: 100%;
+  @media print {
+    display: none;
+  }
+  label {
+    font-weight: bold;
+    color: $accent;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  input, textarea {
+    padding: 6px 10px;
+    border: solid 1px #b3b3b3;
+    @media screen and (min-width: $medium-width) {
+      width: calc(100% - 14px);
+    }
+    @media screen and (max-width: $small-width) {
+      width: 100%;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+  input[type="submit"] {
+    background: $accent;
+    border: none;
+    padding: 12px 30px;
+    width: auto;
+    min-width: 60px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.attention {
+  margin: -0.5em 0 0.5em 0;
+  background: $accent;
+  padding: 10px 15px;
+  p, h1, a {
+    text-decoration: none;
+    margin: 2px;
+    color: white;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.25em 0;
+    a {
+      font-size: 0.5em;
+      margin-top: -1.55em;
+      display: inline-block;
+    }
+  }
+}
+
+.slider-gallery img {
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 0;
+  height: auto;
+}
+.slider-gallery a {
+  float: left;
+  margin: 0 5px 5px 0;
+  @media screen and (min-width: $medium-width){
+    width: calc(50% - 20px);
+  }
+  @media screen and (max-width: $small-width) {
+    width: calc(50% - 20px);
+  }
+}
+.slider-gallery p {
+  display: block;
+  margin-top: -1px;
+  margin-left: 10px;
+  background: #333;
+  width: calc(100% - 10px);
+  color: white;
+  padding: 4px 5px;
+}
+
+.errors {
+  width: calc(100% - 30px);
+  padding: 15px 10px;
+  background: red;
+  p {
+    color: white;
+    margin: 0;
+  }
+}
+
+.cookie {
+  transition: all 0.6s;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: #333;
+  &.hide {
+    opacity: 0;
+  }
+  form {
+    margin-bottom: 0;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    background: none;
+    padding: 0;
+    min-width: 0;
+    @media screen and (min-width: $medium-width) {
+      margin-left: 5px;
+    }
+  }
+  label {
+    display: inline-block;
+  }
+}
+
+ol li {
+  margin-bottom: 1em;
+}
+ol.no-right-padding {
+  margin: 0;
+  padding: 0 1.5em;
+}
+
+@import 'globals/typography.scss';

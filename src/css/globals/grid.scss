@@ -1,0 +1,121 @@
+.container {
+  font-size: 1em;
+  width: 90%;
+  max-width: $max-screen-size;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  .container {
+    width: 100%;
+  }
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.container {
+  div[class^="col-"]:first-child, div[class*=" col-"]:first-child {
+    padding-left: 0;
+  }
+  div[class^="col-"]:last-child, div[class*=" col-"]:last-child {
+    padding-right: 0;
+  }
+  img {
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
+
+div[class^="col-"], div[class*=" col-"] {
+  float: left;
+  padding: 0;
+}
+
+@media screen and (min-width: $large-width) {
+  footer {
+    p {
+      display: inline-block;
+    }
+    p.right {
+      text-align: right;
+    }
+  }
+  div[class^="col-"], div[class*=" col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .col-6 {
+    width: calc(50% - 20px);
+  }
+  .col-3, .my-gallery img {
+    width: calc(25% - 20px);
+  }
+  .col-4 {
+    width: calc(33% - 20px);
+  }
+  .col-8 {
+    width: calc(60% - 20px);
+  }
+  .col-9 {
+    width: calc(75% - 20px);
+  }
+  .col-12 {
+    width: calc(100% - 20px);
+  }
+}
+@media screen and (min-width: $medium-width) and (max-width: $large-width){
+  div[class^="col-"], div[class*=" col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .col-6, .col-7, .col-9, .col-3 {
+    width: calc(50% - 20px);
+    &.details {
+      width: calc(100% - 20px);
+      padding-left: 0;
+    }
+  }
+  .col-8 {
+    width: calc(100% - 20px);
+  }
+  .col-4, .col-5, .col-6 {
+    width: calc(50% - 20px);
+  }
+  .hide-on-small {
+    display: none;
+  }
+  .phone {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: $small-width) {
+  div[class^="col-"], div[class*=" col-"] {
+    width: 100%;
+  }
+  .hide-on-small {
+    display: none;
+  }
+}
+
+.col-4 {
+  &.always {
+    @media all and (min-width: $small-width) {
+      width: calc(33% - 20px);
+    }
+    @media all and (max-width: $small-width) {
+      width: 33%;
+    }
+  }
+}
+
+.content {
+  @media print {
+    img {
+      display: none;
+      display: none;
+    }
+  }
+}
