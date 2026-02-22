@@ -16,14 +16,14 @@ export const Header = () => {
           <li id="menu" onClick={handleClick}>
             <a>Menu</a>
           </li>
-          <li><a href="index">Home</a></li>
-          <li><a href="garage-conversions">Garage Conversions</a></li>
-          <li><a href="kitchensandbathrooms">Kitchens &amp; Bathrooms</a></li>
-          <li><a href="composite-and-upvc">Composite Doors &amp; UPVC Windows</a></li>
-          <li><a href="buildingandjoinery">Building &amp; Joinery</a></li>
-          <li><a href="links">Useful Links</a></li>
-          <li><a href="gallery">Gallery</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/garage-conversions">Garage Conversions</a></li>
+          <li><a href="/kitchensandbathrooms">Kitchens &amp; Bathrooms</a></li>
+          <li><a href="/composite-and-upvc">Composite Doors &amp; UPVC Windows</a></li>
+          <li><a href="/buildingandjoinery">Building &amp; Joinery</a></li>
+          <li><a href="/links">Useful Links</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div className="images">

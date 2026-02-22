@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="" />
+    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/font/bjb-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/bjb-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/bjb-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/bjb-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/font/bjb-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/garage-conversions/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/bjb-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/bjb-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/bjb-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/bjb-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/font/bjb-icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -18,22 +34,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/robertwilkinson/projects/bolton-joinary-and-building/public&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/Users/robertwilkinson/projects/bolton-joinary-and-building/public",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/robertwilkinson/projects/bolton-joinary-and-building/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -74,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771767956860</updated>
       <workItem from="1771767957886" duration="2301000" />
+      <workItem from="1771770282812" duration="1402000" />
     </task>
     <servers />
   </component>
