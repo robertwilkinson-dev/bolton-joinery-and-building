@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="building and joinery">
-      <change afterPath="$PROJECT_DIR$/public/downloads/composite_doors.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/downloads/glass.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/downloads/terms_and_conditions-BJB-2024.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/downloads/upvc_doors.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/downloads/upvc_windows.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/links/page.tsx" afterDir="false" />
+    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="links">
+      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/gallery/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +61,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/css/font" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
@@ -99,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771767956860</updated>
       <workItem from="1771767957886" duration="2301000" />
-      <workItem from="1771770282812" duration="2242000" />
+      <workItem from="1771770282812" duration="4534000" />
     </task>
     <task id="LOCAL-00001" summary="restore icons">
       <option name="closed" value="true" />
@@ -133,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771772302395</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="links">
+      <option name="closed" value="true" />
+      <created>1771772539178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1771772539178</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +150,7 @@
     <MESSAGE value="add kitchens" />
     <MESSAGE value="upvc" />
     <MESSAGE value="building and joinery" />
-    <option name="LAST_COMMIT_MESSAGE" value="building and joinery" />
+    <MESSAGE value="links" />
+    <option name="LAST_COMMIT_MESSAGE" value="links" />
   </component>
 </project>
