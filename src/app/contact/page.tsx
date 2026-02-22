@@ -1,7 +1,9 @@
 import {FC} from "react";
+import Script from "next/script";
 
 const ContactPage: FC = () => (
-  <div className="content">
+  <>
+    <div className="content">
     <br />
     <div className="container">
       <div className="col-12" style={{ marginBottom: 20 }}>
@@ -93,6 +95,37 @@ const ContactPage: FC = () => (
       </div>
     </div>
   </div>
+
+    <Script
+      id="google-maps-init"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+            function initMap() {
+              var location = { lat: 53.603076, lng: -2.539411 };
+
+              var map = new google.maps.Map(
+                document.getElementById('map'),
+                {
+                  zoom: 20,
+                  center: location
+                }
+              );
+
+              new google.maps.Marker({
+                position: location,
+                map: map
+              });
+            }
+          `,
+      }}
+    />
+
+    <Script
+      src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}&callback=initMap`}
+        strategy="afterInteractive"
+      />
+  </>
 )
 
 export default ContactPage
