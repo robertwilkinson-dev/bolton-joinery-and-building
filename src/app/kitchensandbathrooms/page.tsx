@@ -1,6 +1,6 @@
 import {FC} from "react";
 
-export const KitchensandbathroomsPage: FC = () => (
+const KitchensAndBathroomsPage: FC = () => (
   <div className="content">
     <div className="container">
       <div className="col-9">
@@ -20,4 +20,4 @@ export const KitchensandbathroomsPage: FC = () => (
   </div>
 )
 
-export default KitchensandbathroomsPage
+export default KitchensAndBathroomsPage
