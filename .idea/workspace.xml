@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="add kitchens">
-      <change afterPath="$PROJECT_DIR$/src/app/composite-and-upvc/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/kitchensandbathrooms/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/kitchensandbathrooms/page.tsx" afterDir="false" />
+    <list default="true" id="68920fd4-8e98-48b1-a779-8ffff9a8a18e" name="Changes" comment="building and joinery">
+      <change afterPath="$PROJECT_DIR$/public/downloads/composite_doors.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/downloads/glass.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/downloads/terms_and_conditions-BJB-2024.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/downloads/upvc_doors.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/downloads/upvc_windows.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/links/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="389" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -87,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771767956860</updated>
       <workItem from="1771767957886" duration="2301000" />
-      <workItem from="1771770282812" duration="1868000" />
+      <workItem from="1771770282812" duration="2242000" />
     </task>
     <task id="LOCAL-00001" summary="restore icons">
       <option name="closed" value="true" />
@@ -105,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771771929902</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upvc">
+      <option name="closed" value="true" />
+      <created>1771772166903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771772166903</updated>
+    </task>
+    <task id="LOCAL-00004" summary="building and joinery">
+      <option name="closed" value="true" />
+      <created>1771772302395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771772302395</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="restore icons" />
     <MESSAGE value="add kitchens" />
-    <option name="LAST_COMMIT_MESSAGE" value="add kitchens" />
+    <MESSAGE value="upvc" />
+    <MESSAGE value="building and joinery" />
+    <option name="LAST_COMMIT_MESSAGE" value="building and joinery" />
   </component>
 </project>
